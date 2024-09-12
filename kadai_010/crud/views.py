@@ -28,4 +28,4 @@ class ProductDeleteView(DeleteView):
 
 class ProductDetailView(DetailView):
      model = Product
-     template_name = 'product_detail.html'
+     

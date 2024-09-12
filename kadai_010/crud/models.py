@@ -1,5 +1,6 @@
 from django.db import models
 from django.urls import reverse
+
 class Product(models.Model):
     name = models.CharField(max_length=200)
     price = models.PositiveIntegerField()

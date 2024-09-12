@@ -3,6 +3,7 @@
  
 {% block title %}商品詳細{% endblock %}
 {% block content %}
+
     <h1>商品詳細</h1>
         <table>
             <tr>
@@ -15,5 +16,5 @@
             <td>{{ object.price }} 円</td>
         </tr>
     </table>
-    <a href="{% url 'product_list' %}">戻る</a>
+    <a href="{% url 'list' %}">戻る</a>
 {% endblock %}
