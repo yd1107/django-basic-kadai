@@ -11,6 +11,8 @@
         <tr>
             <th>商品名</th>
             <th>価格</th>
+            <th>カテゴリ</th>
+            <th>画像</th>
             <th>アクション</th>
         </tr>
     </thead>
@@ -18,6 +20,8 @@
     <tr>
         <td>{{ product.name }}</td>
         <td>{{ product.price }} 円</td>
+        <td>{{ product.category }}</td>
+        <td><img src="{{ product.img.url }}" style="width:100px height:auto;"></td>
     
         <td>
             <button class="btn btn-success" onclick="location.href='{% url 'detail' pk=product.pk %}'">詳細</button>
